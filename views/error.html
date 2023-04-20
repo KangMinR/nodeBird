@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+<!--서버 데이터들이 각각 들어간다-->
+{% block content %}
+  <h1>{{message}}</h1> 
+  <h2>{{error.status}}</h2> 
+  <pre>{{error.stack}}</pre>
+{% endblock %}
