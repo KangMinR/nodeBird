@@ -3,7 +3,7 @@ const router = express.Router();
 const { renderJoin, renderMain, renderProfile } = require('../controllers/page');
 
 router.use((req, res, next) => { //res.locals -> 라우터들에서 공통적으로 쓸 수 있는 변수
-  res.locals.user = null; //지금은 빈 데이터를 넣어두겠다
+  res.locals.user = null; //지금은 빈 데이터를 넣어두겠다 라는 뜻이다
   res.locals.followerCount = 0;
   res.locals.followingCount = 0;
   res.locals.followingIdList = [];
